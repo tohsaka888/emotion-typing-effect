@@ -9,7 +9,7 @@ specifiers:
   autoprefixer: 10.4.11
   css-loader: 6.7.1
   css-minimizer-webpack-plugin: 4.1.0
-  html-webpack-plugin: 5.5.0
+  html-webpack-plugin: 5.6.3
   mini-css-extract-plugin: 2.6.1
   postcss: 8.4.16
   postcss-loader: 7.0.1
@@ -37,7 +37,7 @@ devDependencies:
   autoprefixer: 10.4.11_postcss@8.4.16
   css-loader: 6.7.1_webpack@5.74.0
   css-minimizer-webpack-plugin: 4.1.0_webpack@5.74.0
-  html-webpack-plugin: 5.5.0_webpack@5.74.0
+  html-webpack-plugin: 5.6.3_webpack@5.74.0
   mini-css-extract-plugin: 2.6.1_webpack@5.74.0
   postcss: 8.4.16
   postcss-loader: 7.0.1_qjv4cptcpse3y5hrjkrbb7drda
@@ -1629,11 +1629,17 @@ packages:
       terser: 5.14.2
     dev: true
 
-  /html-webpack-plugin/5.5.0_webpack@5.74.0:
-    resolution: {integrity: sha512-sy88PC2cRTVxvETRgUHFrL4No3UxvcH8G1NepGhqaTT+GXN2kTamqasot0inS5hXeg1cMbFDt27zzo9p35lZVw==}
+  /html-webpack-plugin/5.6.3_webpack@5.74.0:
+    resolution: {integrity: sha512-QSf1yjtSAsmf7rYBV7XX86uua4W/vkhIt0xNXKbsi2foEeW7vjJQz4bhnpL3xH+l1ryl1680uNv968Z+X6jSYg==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
+      '@rspack/core': 0.x || 1.x
       webpack: ^5.20.0
+    peerDependenciesMeta:
+      '@rspack/core':
+        optional: true
+      webpack:
+        optional: true
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
